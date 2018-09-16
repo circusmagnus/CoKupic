@@ -1,8 +1,7 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'groovyx.android'
 
 android {
     compileSdkVersion 27
@@ -37,7 +36,8 @@ dependencies {
     implementation "android.arch.lifecycle:common-java8:$lifecycle_version"
 
     testImplementation 'junit:junit:4.12'
-    testImplementation "org.spockframework:spock-core:1.1-groovy-2.4-rc-2"
+    testImplementation 'org.codehaus.groovy:groovy-all:2.4.13'
+    testImplementation 'org.spockframework:spock-core:1.1-groovy-2.4-rc-2'
 
     // Test helpers for LiveData
     testImplementation "android.arch.core:core-testing:$lifecycle_version"

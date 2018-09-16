@@ -5,5 +5,5 @@ data class FormulaSnapshot(
     val timestamp: Long,
     val name: String,
     val description: String,
-    val products: Set<Product>
+    val products: List<Product>
 )
